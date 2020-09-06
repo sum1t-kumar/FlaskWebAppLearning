@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% import 'macros/form.html' as f with context %}
+
+{% block title %}EMail Verification{% endblock %}
+
+{% block body %}
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4 well">
+      {% call f.form_tag('users.mail_verified') %}
+
+        <div class="row">
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-primary btn-block">
+              Click to verify
+            </button>
+          </div>
+        </div>
+      {% endcall %}
+    </div>
+  </div>
+{% endblock %}
