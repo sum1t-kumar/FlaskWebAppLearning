@@ -9,7 +9,7 @@ class Database:
 
     # Atlas cloud mongoDB connection
 
-    client = pymongo.MongoClient("mongodb+srv://chysumit:ow4MkJTh0dTu07oK@cluster0-elbga.mongodb.net/test?retryWrites=true&w=majority")
+    client = pymongo.MongoClient("mongodb+srv://*******:******@cluster0-elbga.mongodb.net/test?retryWrites=true&w=majority")
     DATABASE = client.test
 
     @staticmethod
